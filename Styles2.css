@@ -311,3 +311,65 @@ footer a:hover {
 ::-webkit-scrollbar-thumb:hover{
     background-color: #ff5500;
 }
+
+@media (max-width: 1024px) {
+    .logo img {
+        width: 60px;
+    }
+
+    .banner {
+        height: 60vh;
+    }
+
+    .banner-texto h2 {
+        font-size: 2.5em;
+    }
+
+    .banner-texto p {
+        font-size: 1.2em;
+    }
+
+    .producto-card {
+        flex: 1 1 calc(50% - 10px); /* Dos productos por fila */
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .banner {
+        height: 50vh;
+    }
+
+    .banner-texto h2 {
+        font-size: 2em;
+    }
+
+    .banner-texto p {
+        font-size: 1em;
+    }
+
+    .producto-card {
+        flex: 1 1 100%;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .ver-mas {
+        padding: 8px 12px;
+    }
+}
